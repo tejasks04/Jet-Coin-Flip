@@ -1,0 +1,52 @@
+.header-coin-flip{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(142, 196, 148);
+  height: 70px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  color: black;
+  font-weight: bold;
+  z-index: 1000;
+  top: 0;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+.home,
+.projects,
+.about{
+  height: 25px;
+  width: 30px;
+  margin-right: 10px;
+}
+.about{
+  height: 30px;
+}
+.middle-name,
+.home-name,
+.about-us{
+  font-size: 15px;
+}
+.h-flex-1,
+.h-flex-2,
+.h-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 10px;
+  font-weight: bold;
+}
+.my-logo{
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+  margin-right: 10px;
+  margin-left: 50px;
+}
+.my-name{
+  height: 130px;
+  margin-top: 5px;
+}

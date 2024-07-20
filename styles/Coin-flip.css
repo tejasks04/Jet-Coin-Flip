@@ -1,0 +1,279 @@
+body{
+  padding-top: 80px;
+  font-family: Arial;
+  background-image: url("https://wallpaperset.com/w/full/d/b/6/255909.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.head, .tile {
+  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-image: url("https://wallpaperset.com/w/full/d/b/6/255909.jpg");
+  border: none;
+  border-radius: 65px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.reset {
+  padding: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(194, 11, 11);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.reset:hover{
+  opacity: 0.9;
+}
+.reset:active{
+  background-color: rgb(47, 255, 57);
+  color: black;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Define the keyframes for the horizontal rotation */
+@keyframes horizontal-rotate {
+  from {
+    transform: rotateY(0deg);
+    opacity: 0.001;
+  }
+  to {
+    transform: rotateY(360deg);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the .result class */
+.result {
+  height: 160px;
+  width: 150px;
+  animation: horizontal-rotate 0.01s linear 30;
+}
+
+/* Center the element using the .js-flipping class */
+.js-flipping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -70px; /* Adjust as needed */
+}
+
+.result-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.js-result{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.js-pick,.js-score {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.choice{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.game{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 35px;
+  background-image: url("https://media.istockphoto.com/id/1248543652/vector/dreamy-smooth-abstract-green-background.jpg?s=612x612&w=0&k=20&c=ZOnZHfWOJryY4sGeliLbQeueF77svXg7iZjmE__GIoM=");
+  word-spacing: 10px;
+  margin-bottom: 70px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.guess{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  border-style: solid;
+  border-width: 2px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-color: grey;
+}
+.car-head {
+  height: 120px;
+  position: absolute;
+  right: 50px;
+  animation: rotateHead 5s infinite linear;
+  transform-origin: center;
+}
+
+.car-tail {
+  height: 120px;
+  position: absolute;
+  left: 50px;
+  animation: rotateTail 5s infinite linear;
+  transform-origin: center;
+}
+
+@keyframes rotateHead {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotateTail {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.pt{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.follow-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+.imgs{
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+.follow-us {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+  border-style: solid;
+  border-width: 2px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-color: grey;
+  padding-top: 50px;
+  padding-top: 100px;
+}
+.imgs-1{
+  height: 60px;
+  width: 60px;
+  margin-right: -5px;
+}
+p{
+  font-size: 20px;
+  font-weight: bold;
+}
+a {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+.h3{
+  font-size: 25px;
+  font-weight: 900;
+  color: black;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+.link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.fol{
+  display: flex;
+  margin-bottom: 20px;
+  color: black;
+}
+.car {
+  height: 350px;
+  width: 400px;
+  position: absolute;
+  animation: moveLeftRight 5s infinite alternate;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    left: 200px;
+  }
+  100% {
+    left: 500px; /* Adjust this value as needed for the desired range of movement */
+  }
+}
+.road{
+  display: flex;
+  padding: 20px;
+  background-color: black;
+  margin-top: -240px;
+  margin-bottom: 20px;
+}
+.h1{
+  margin-top: -350px;
+  font-size: 40px;
+  font-weight: 900;
+}
+.guessing{
+  display: flex;
+  height: 400px;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+}
+.earth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -35px;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
